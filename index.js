@@ -109,6 +109,7 @@ function fetchIdentifier(steamID)
 				profile: player.profileurl,
 				primaryclanid: player.primaryclanid,
 				timecreated: player.timecreated, 
+				profileurl: player.profileurl, 
 				avatar: {
 					small: player.avatar,
 					medium: player.avatarmedium,
