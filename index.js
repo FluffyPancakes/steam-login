@@ -99,10 +99,16 @@ function fetchIdentifier(steamID)
 			var player = players[0];
 			return Promise.resolve({
 				_json: player,
-				steamid: steamID,
+				steamid: player.steamid,
+				communityvisibilitystate: player.communityvisibilitystate,
+				profilestate: player.profilestate,
+				personastate: player.personastate,
+				lastlogoff: player.lastlogoff,
 				username: player.personaname,
 				name: player.realname,
 				profile: player.profileurl,
+				primaryclanid: player.primaryclanid,
+				timecreated: player.timecreated, 
 				avatar: {
 					small: player.avatar,
 					medium: player.avatarmedium,
